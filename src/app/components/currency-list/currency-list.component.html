@@ -1,0 +1,12 @@
+<div class="currency-list">
+    <mat-card class="currency-item" *ngFor="let currencyItem of currencyList">
+        <div class="currnecy-info">
+            <mat-card-title class="source-value">
+                {{currencyItem?.sourceCurrency}}
+            </mat-card-title>
+            <mat-card-title class="target-value">
+                {{currencyItem?.value | number: '1.0-2'}} {{currencyItem?.targetCurrency}}
+            </mat-card-title>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+
+.currency-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .currency-item {
+        margin: 0.5rem;
+        min-width: 20%;
+
+        .currnecy-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .target-value {
+            margin-top: 0;
+            color: #3f51b5;
+        }
+    }
+}
+
+.converter-form {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+
+    .mat-card {
+        background: #e7ebff;
+        padding: 2rem;
+        border-radius: 40px 10px;
+    }
+
+    .mat-form-field {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+
+        .mat-input-element:disabled {
+            color: #000;
+        }
+    }
+}

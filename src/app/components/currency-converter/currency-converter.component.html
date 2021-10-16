@@ -1,0 +1,33 @@
+<div class="converter-form">
+    <mat-card>
+        <form [formGroup]="converterForm" autocomplete="off">
+            <mat-form-field>
+                <mat-label>Source Currency</mat-label>
+                <mat-select formControlName="sourceCurrency">
+                    <mat-option *ngFor="let currencyType of sourceCurrencies" [value]="currencyType">
+                        {{currencyType}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Currency Value</mat-label>
+                <input type="number" matInput formControlName="currencyValue" placeholder="Enter Amount">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Targetted Currency</mat-label>
+                <mat-select formControlName="targetCurrency">
+                    <mat-option *ngFor="let currencyType of targetCurrencies" [value]="currencyType">
+                        {{currencyType}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Converted Value</mat-label>
+                <input type="number" matInput formControlName="convertedValue" placeholder="Converted Value">
+            </mat-form-field>
+        </form>
+    </mat-card>
+</div>
